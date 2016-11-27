@@ -20,3 +20,18 @@ pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 
 pip install --upgrade pip
 
+
+
+
+
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; make -j4
+cd python-package; sudo python setup.py install
+
+
+
+
+
+
+
+
