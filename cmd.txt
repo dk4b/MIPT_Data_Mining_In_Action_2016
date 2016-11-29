@@ -30,6 +30,8 @@ cd python-package; sudo python setup.py install
 
 
 
+https://nbviewer.jupyter.org/github/dk4b/MIPT_Data_Mining_In_Action_2016/blob/master/
+
 
 
 
