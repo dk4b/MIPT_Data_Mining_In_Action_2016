@@ -67,3 +67,5 @@
 /trends/avt/Seminar9_ru.ipynb
 /trends/hw5/avito_train_1kk.tsv
 /trends/hw5/avito_train_1kk.tsv.tar.gz
+/trends/hw5/preprocessed_data.pcl
+/trends/hw5/token_to_id.pcl
