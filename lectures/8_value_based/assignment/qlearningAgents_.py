@@ -60,16 +60,10 @@ class QLearningAgent(ReinforcementAgent):
     if len(possibleActions) == 0:
     	return 0.0
 
-    
-    maxq = -float('inf')
-    maxa = None
+    "*** YOUR CODE HERE ***"
+    raise NotImplementedError
 
-    for action in possibleActions:
-        curq = self.getQValue(state, action)
-        if maxq < curq:
-          maxq = curq
-          maxa = action
-    return maxq
+    return 0.
     
   def getPolicy(self, state):
     """
@@ -80,22 +74,14 @@ class QLearningAgent(ReinforcementAgent):
 
     #If there are no legal actions, return None
     if len(possibleActions) == 0:
-         return None
+    	return None
     
     best_action = None
 
     "*** YOUR CODE HERE ***"
-#    raise NotImplementedError
+    raise NotImplementedError
 
-    maxq = -float('inf')
-    maxa = None
-
-    for action in possibleActions:
-        curq = self.getQValue(state, action)
-        if maxq < curq:
-          maxq = curq
-          maxa = action
-    return maxa
+    return best_action
 
   def getAction(self, state):
     """
@@ -115,22 +101,15 @@ class QLearningAgent(ReinforcementAgent):
     
     #If there are no legal actions, return None
     if len(possibleActions) == 0:
-         return None
+    	return None
 
     #agent parameters:
     epsilon = self.epsilon
 
     "*** YOUR CODE HERE ***"
-    if util.flipCoin(epsilon):
-        return random.choice(possibleActions)
-    else:
-        return self.getPolicy(state)
+    raise NotImplementedError    
 
-
-
-#    return action
-
-
+    return action
 
   def update(self, state, action, nextState, reward):
     """
@@ -145,13 +124,13 @@ class QLearningAgent(ReinforcementAgent):
     gamma = self.discount
     learning_rate = self.alpha
     
-    "*** YOUR CODE HERE ***" 
-#    raise NotImplementedError
+    "*** YOUR CODE HERE ***"
+    raise NotImplementedError
     
-    reference_qvalue = reward + gamma * self.getValue(nextState)
-    updated_qvalue = learning_rate * reference_qvalue + (1 - learning_rate) * self.getQValue(state, action)
+    reference_qvalue = PleaseImplementMe
+    updated_qvalue = PleaseImplementMe
 
-    self.setQValue(state,action,updated_qvalue)
+    self.setQValue(PleaseImplementMe,PleaseImplementMe,updated_qvalue)
 
 
 #---------------------#end of your code#---------------------#
